@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: #5900ff;
+}
+
+.bmi {
+    height: 550px;
+    min-width: fit-content;
+    width: 400px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+
+.bmi h2 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.bmi .input-box {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.bmi .input-box label {
+    font-size: 20px;
+    flex: 1;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
+.bmi .input-box input {
+    height: 40px;
+    flex: 3;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    /* padding-left: 5px; */
+}
+
+.bmi .btn {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn button {
+    font-size: 20px;
+    background: #5900ff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 15px 40px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .4s ease;
+    width: 100%;
+}
+
+.btn button:hover {
+    background: #8241fc;
+}
+
+.bmi .output {
+    margin-top: 40px;
+    position: relative;
+}
+
+.bmi .output .result {
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    text-align: center;
+    color: #5900ff;
+}
+
+.bmi .output .Guide {
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+.under {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all .4s ease;
+    margin-top: 8px;
+}
+
+.normal {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 600;
+    width: 100%;
+    border-radius: 5px;
+    transition: all .4s ease;
+    margin-top: 5px;
+}
+
+.over {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 600;
+    width: 100%;
+    transition: all .4s ease;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+    .bmi {
+        height: 100%;
+        width: 100%;
+        padding: 15px;
+        border-radius: 0;
+    }
+}
